@@ -1,6 +1,13 @@
-#include <iostream>
 
-int main() {
-    std::cout << "hello, world!" <<std::endl;
-    return 0;
-}
+#include <stdio.h>
+
+int main()
+{
+    int a = 5 + 3;
+    int b = 5 - 3;
+    int c = 5 * 3;
+    int d = 5 / 3;
+    double e = 5 / 3.0;
+    int f = 5 % 3;
+    
+    std::cout << a << " "<< b << " "<< c << " "<< d << " "<< e << " "<< f << " "
