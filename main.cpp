@@ -1,13 +1,16 @@
+#include <iostream>
 
-#include <stdio.h>
+int main() {
+    std::cout << "請輸入年齡：";
+    int age;
+    std::cin >> age;
 
-int main()
-{
-    int a = 5 + 3;
-    int b = 5 - 3;
-    int c = 5 * 3;
-    int d = 5 / 3;
-    double e = 5 / 3.0;
-    int f = 5 % 3;
-    
-    std::cout << a << " "<< b << " "<< c << " "<< d << " "<< e << " "<< f << " "
+    if (age >= 18) {
+        std::cout << "你已滿 18 歲，可以觀看限制級內容。\n";
+    }
+    if (age < 18) {
+        std::cout << "你還是好好讀書吧。\n";
+    }
+
+    return 0;
+}
